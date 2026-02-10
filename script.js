@@ -38,6 +38,10 @@ noBtn.addEventListener('click', () => {
   yesBtn.style.transform = `scale(${yesBtnSize})`;
   yesBtn.style.padding = `${15 * yesBtnSize}px ${30 * yesBtnSize}px`;
   
+  // Move no button to the right to keep it clickable
+  const offset = 50 * noClickCount;
+  noBtn.style.transform = `translateX(${offset}px)`;
+  
   // Change no button text
   if (noClickCount < noMessages.length) {
     noBtn.textContent = noMessages[noClickCount];
@@ -54,11 +58,8 @@ noBtn.addEventListener('click', () => {
 });
 
 yesBtn.addEventListener('click', () => {
-  questionContainer.classList.add('hidden');
-  successContainer.classList.remove('hidden');
-  
-  // Add confetti effect (simple version)
-  createConfetti();
+  // Redirect to success page
+  window.location.href = 'success.html';
 });
 
 // Simple confetti effect
