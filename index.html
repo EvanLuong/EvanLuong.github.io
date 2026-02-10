@@ -2,67 +2,24 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Evan Luong</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-    }
-    h1 { margin-bottom: 5px; }
-    .muted { color: #555; }
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 16px;
-      margin-top: 16px;
-    }
-    a { color: #2F6FFF; text-decoration: none; }
-  </style>
+  <title>Valentine's Day 💕</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div id="question-container" class="container">
+    <h1>Will you be my Valentine? 💝</h1>
+    <div class="buttons">
+      <button id="yes-btn" class="yes-btn">Yes! 💕</button>
+      <button id="no-btn" class="no-btn">No</button>
+    </div>
+  </div>
 
-  <header>
-    <h1>Evan Luong</h1>
-    <p>UNSW Computer Science Student</p>
-  </header>
+  <div id="success-container" class="container hidden">
+    <h1>Congratulations, you are my Valentine! 🎉💖</h1>
+    <p class="celebration">✨ 💕 ✨</p>
+  </div>
 
-  <section>
-    <h2>About</h2>
-    <p>
-      I’m a UNSW Computer Science student interested in software engineering,
-      fintech, and building real-world systems.
-    </p>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>C</li>
-      <li>Git & GitHub</li>
-      <li>HTML/CSS (learning)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>AI Receptionist</strong> – Automated booking and lead qualification
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-    <p>GitHub: github.com/EvanLuong</p>
-  </section>
-
+  <script src="script.js"></script>
 </body>
 </html>
