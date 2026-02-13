@@ -1,3 +1,54 @@
+/* Day and Night page backgrounds */
+.day-bg {
+    background: linear-gradient(to right,
+        #f5f7fa 0%,
+        #e8eef5 40%,
+        #c3cfe2 100%
+    );
+    min-height: 100vh;
+}
+.night-bg {
+    background: linear-gradient(to right,
+        #1a1332 0%,
+        #764ba2 50%,
+        #0f0b1f 100%
+    );
+    min-height: 100vh;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.switch-link {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    background: #e8eef5;
+    color: #764ba2;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 8px rgba(80,60,120,0.08);
+    transition: background 0.3s, color 0.3s;
+}
+.switch-link:hover {
+    background: #764ba2;
+    color: #fff;
+}
+/* Make night dropbox text lighter for readability */
+.timeline-item[data-index="4"] .item-box,
+.timeline-item[data-index="5"] .item-box,
+.timeline-item[data-index="6"] .item-box,
+.timeline-item[data-index="7"] .item-box {
+    color: #fff !important;
+    text-shadow: 0 1px 6px rgba(30,24,56,0.18);
+}
 /* ==================== */
 /* RESET & BASE */
 /* ==================== */
