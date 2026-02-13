@@ -1,3 +1,24 @@
+/* ==================== */
+/* ITEM IMAGE SECTION   */
+/* ==================== */
+
+.item-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.item-image img {
+    max-width: 120px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(80,60,120,0.10);
+    object-fit: cover;
+}
 /* Day and Night page backgrounds */
 .day-bg {
     background: linear-gradient(to right,
